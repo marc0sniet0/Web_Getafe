@@ -136,13 +136,13 @@ header{
 }
 
 .title {
-  position: fixed;        /* fijo en pantalla */
-  top: 50%;               /* centrado vertical */
-  left: 50%;              /* centrado horizontal */
+  position: fixed;        
+  top: 50%;               
+  left: 50%;             
   transform: translate(-50%, -50%);
   font-size: 40vw;
   color: var(--color-beige);
-  z-index: 1;            /* por encima del fondo, detrás de las tarjetas */
+  z-index: 1;            
 }
 
 
@@ -154,30 +154,34 @@ header{
 }
 
 .cards--exit {
-  transform: translateY(-120vh); /* sube todo el bloque fuera de pantalla */
+  transform: translateY(-120vh); 
 }
 
 .card {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(1); /* centrado vertical y horizontal */
-  width: 340px;
-  height: 220px;
-  background: orange;
-  color: white;
+  transform: translate(-50%, -50%) scale(1); 
+  width: 50rem;
+  /* height: 14rem; */
+  background: var(--color-blanco);
+  color: var(--color-negro);
   font-size: 2em;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   opacity: 0;
   z-index: 2;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.card img{
+  width: 100%;
+  height: auto;
+}
 
 .eventos {
   height: 500px;
@@ -188,6 +192,10 @@ header{
   opacity: 1;           
   transition: none;
   z-index: 999;        
+}
+
+.eventos h1{
+  color: #981932;
 }
 
 

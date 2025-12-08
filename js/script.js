@@ -17,7 +17,7 @@ burger.addEventListener("click", function() {
 const cards = document.querySelectorAll('.card');
 const nextSection = document.querySelector('.next-section');
 
-const triggers = [0.12, 0.28, 0.44, 0.60, 0.76];
+const triggers = [0.25, 0.40, 0.55, 0.70, 0.85];
 const entranceWindow = 0.08;
 
 function clamp(v, min, max) {
