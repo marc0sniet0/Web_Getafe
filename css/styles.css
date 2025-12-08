@@ -18,7 +18,7 @@
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    transition: all 0.3s;
+    
 }
 
 
@@ -33,17 +33,28 @@ h1{
     font-family: "Karantina", system-ui;
     font-weight: 400;
     font-style: normal;
+    font-size: 3.5rem;
+}
+
+a{
+  text-decoration: none;
 }
 
 nav {
     width: 100%;
     height: 70px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: var(--color-carmesí);
     color: var(--color-beige);
     border-bottom: 1px solid var(--color-beige);
+}
+
+nav a{
+  color: var(--color-beige);
 }
 
 .logo {
@@ -53,7 +64,7 @@ nav {
 .menu {
     display: flex;
     justify-content: space-around;
-    gap: 1.6rem;
+    gap: 2.5rem;
 }
 
 .menulink {
@@ -62,8 +73,6 @@ nav {
 }
 
 .menulink a {
-    color: var(--color-beige);
-    text-decoration: none;
     font-size: 1.2em;
 }
 
@@ -140,7 +149,7 @@ nav {
 
 
 /* * MEDIA QUERIES */ 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 765px) {
     .burger {
         display: block;
     }
@@ -151,8 +160,9 @@ nav {
         position: fixed;
         right: -100%;
         top: 70px;
+        margin-top: 1rem;
         width: 100%;
-        height: calc(100% - 70px);
+        height: calc(40% - 70px);
         flex-direction: column;
         justify-content: space-around;
         padding: 0;
