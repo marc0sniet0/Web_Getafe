@@ -1,19 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color-carmesí: #981932;
+    --color-beige: #FFF0D9;
+    --color-azul: #0040DC;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Slab", serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
     transition: all 0.3s;
 }
 
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: #000;
+  background: var(--color-carmesí);
   color: #fff;
   overflow-x: hidden;
+}
+
+h1{
+    font-family: "Karantina", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav {
@@ -22,12 +41,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #232323;
-    color: #ccc;
-    box-shadow: 0px 0.6px 1.6px rgba(0, 0, 0, 0.25), 0px 1.4px 3.6px rgba(0, 0, 0, 0.19),
-        0px 2.4px 6.3px rgba(0, 0, 0, 0.163), 0px 3.8px 10px rgba(0, 0, 0, 0.143),
-        0px 5.8px 15.5px rgba(0, 0, 0, 0.125), 0px 9px 24.1px rgba(0, 0, 0, 0.107),
-        0px 15px 40px rgba(0, 0, 0, 0.087), 0px 30px 80px rgba(0, 0, 0, 0.06);
+    background: var(--color-carmesí);
+    color: var(--color-beige);
+    border-bottom: 1px solid var(--color-beige);
 }
 
 .logo {
@@ -46,7 +62,7 @@ nav {
 }
 
 .menulink a {
-    color: #ccc;
+    color: var(--color-beige);
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -131,7 +147,7 @@ nav {
 
     .menu {
         margin: 0;
-        background: #343434;
+        background: #981932;
         position: fixed;
         right: -100%;
         top: 70px;
