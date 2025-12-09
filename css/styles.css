@@ -18,6 +18,8 @@
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    scroll-behavior: smooth;
+    user-select: none;
     
 }
 
@@ -56,7 +58,7 @@ nav {
     background: var(--color-carmesí);
     color: var(--color-beige);
     border-bottom: 1px solid var(--color-beige);
-    z-index: 6;
+    z-index: 99;
 
 }
 
@@ -108,7 +110,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 150rem;
+  width: 90rem;
 }
 
 .img-header img{
@@ -162,7 +164,7 @@ header{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1); 
-  width: 50rem;
+  width: 60vw;
   /* height: 14rem; */
   background: var(--color-blanco);
   color: var(--color-negro);
@@ -273,6 +275,10 @@ header{
 
 /* * MEDIA QUERIES */ 
 @media screen and (max-width: 765px) {
+
+    p{
+      font-size: 0.7rem;
+    }
     .burger {
         display: block;
     }
@@ -304,11 +310,17 @@ header{
     header{
       flex-direction: column;
       align-items: center;
+      justify-content: space-evenly;
       gap: 2rem;
     }
 
     .img-header{
-      width: 20rem;
+      width: 12rem;
+    }
+
+    .card {
+      width: 95vw;
+     
     }
 
 }
