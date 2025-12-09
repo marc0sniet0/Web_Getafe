@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color-carmesí: #981932;
+    --color-beige: #FFF0D9;
+    --color-azul: #0040DC;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    scroll-behavior: smooth;
+    user-select: none;
+    
+}
+
+
 body {
   margin: 0;
-  background: #000;
+  background: var(--color-carmesí);
   color: #fff;
-  font-family: sans-serif;
   overflow-x: hidden;
 }
+
+
 
 /* Escenario fijo */
 .stage {
@@ -25,6 +52,12 @@ body {
   will-change: opacity, transform;
 }
 
+.stage img:nth-child(2),
+.stage img:nth-child(4) {
+  filter: hue-rotate(220deg);
+}
+
+
 /* Overlay con frame droppable */
 .overlay {
   position: fixed;
@@ -36,11 +69,11 @@ body {
 }
 .frame {
   width: clamp(280px, 60vw, 900px);
-  height: clamp(220px, 50vh, 600px);
-  border: 2px solid rgba(255,255,255,0.6);
-  border-radius: 14px;
+  height: clamp(220px, 40vh, 600px);
   backdrop-filter: blur(2px);
   box-shadow: 0 0 0 9999px rgba(0,0,0,0.45);
+  background-color: var(--color-beige);
+  color: var(--color-carmesí);
   overflow: hidden;
   position: relative;
   pointer-events: auto;
@@ -48,6 +81,10 @@ body {
 .text-container { position: relative; width: 100%; height: 100%; }
 .text-block {
   position: absolute;
+  font-family: "Karantina", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
   inset: 0;
   display: grid;
   place-items: center;
@@ -67,7 +104,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
-  color: rgba(255,255,255,0.6);
+  color: var(--color-negro);
 }
 .drop-counter {
   position: absolute;
@@ -75,7 +112,7 @@ body {
   right: 12px;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: var(--color-negro);
 }
 
 /* Draggables */
@@ -90,10 +127,8 @@ body {
   cursor: grab;
 }
 .draggable-img img {
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
-  border: 2px solid #fff;
+  width: 7rem;
+  height: 7rem;
 }
 
 /* Scroll track */

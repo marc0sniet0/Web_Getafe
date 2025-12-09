@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Scroll + Drag & Drop múltiple</title>
+  <title>Ayuntamiento de Getafe</title>
+  <link rel="icon" href="media/icono getafe.svg">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/visit_impres.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,35 +14,35 @@
 
   <!-- Escenario fijo con imágenes -->
   <div class="stage">
-    <img src="https://picsum.photos/id/1015/1600/1000" alt="Imagen 1">
-    <img src="https://picsum.photos/id/1025/1600/1000" alt="Imagen 2">
-    <img src="https://picsum.photos/id/1035/1600/1000" alt="Imagen 3">
-    <img src="https://picsum.photos/id/1045/1600/1000" alt="Imagen 4">
-    <img src="https://picsum.photos/id/1055/1600/1000" alt="Imagen 5">
+    <img src="media/Cerro-angeles2.0.png" alt="Imagen 1">
+    <img src="media/GETAFE_MURAL2.0.png" alt="Imagen 2">
+    <img src="media/Cerro-angeles2.0.png" alt="Imagen 3">
+    <img src="media/GETAFE_MURAL2.0.png" alt="Imagen 4">
+    <img src="media/Cerro-angeles2.0.png" alt="Imagen 5">
   </div>
 
   <!-- Ventana fija central con droppable -->
   <div class="overlay">
     <div class="frame" id="droppable">
       <div class="text-container">
-        <div class="text-block">Proyecto 1 — Branding</div>
-        <div class="text-block">Proyecto 2 — Packaging</div>
-        <div class="text-block">Proyecto 3 — Editorial</div>
-        <div class="text-block">Proyecto 4 — Web Architecture</div>
-        <div class="text-block">Proyecto 5 — Cultural Festival</div>
+        <div class="text-block">Teatro Federico García Lorca</div>
+        <div class="text-block">Base Aerea</div>
+        <div class="text-block">Catedral de la Magdalena</div>
+        <div class="text-block">Cerro de Los Ángeles</div>
+        <div class="text-block">Estadio Coliseum</div>
       </div>
-      <p class="drop-msg">Drop here</p>
+      <p class="drop-msg">Recoge las pegatinas aquí.</p>
       <p class="drop-counter">0/5</p>
     </div>
   </div>
 
   <!-- Contenedor de draggables -->
   <div class="draggables">
-    <div id="draggable-1" class="draggable-img"><img src="https://picsum.photos/id/237/120/120" alt="Dog"></div>
-    <div id="draggable-2" class="draggable-img"><img src="https://picsum.photos/id/238/120/120" alt="Cat"></div>
-    <div id="draggable-3" class="draggable-img"><img src="https://picsum.photos/id/239/120/120" alt="Bird"></div>
-    <div id="draggable-4" class="draggable-img"><img src="https://picsum.photos/id/240/120/120" alt="Fish"></div>
-    <div id="draggable-5" class="draggable-img"><img src="https://picsum.photos/id/241/120/120" alt="Horse"></div>
+    <div id="draggable-1" class="draggable-img"><img src="media/teatro.png" alt="Dog"></div>
+    <div id="draggable-2" class="draggable-img"><img src="media/avion rotonda.png" alt="Cat"></div>
+    <div id="draggable-3" class="draggable-img"><img src="media/catedral peg.png" alt="Bird"></div>
+    <div id="draggable-4" class="draggable-img"><img src="media/cerro2.png" alt="Fish"></div>
+    <div id="draggable-5" class="draggable-img"><img src="media/escudo gtf cf.png" alt="Horse"></div>
   </div>
 
   <!-- Track de scroll -->

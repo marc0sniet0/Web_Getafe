@@ -110,7 +110,7 @@ $(function() {
       $drag.css({ cursor: "default", pointerEvents: "none" });
 
       // Feedback visual: solo texto, sin cambiar color
-      $droppable.find(".drop-msg").html("Dropped!");
+      $droppable.find(".drop-msg").html("Sigue añadiendo!");
 
       // Actualizar contador
       const count = dropped.filter(Boolean).length;
@@ -138,7 +138,7 @@ $(function() {
 
     // Botón "Cerrar" redirige a otra página
     $("#closeModal").on("click", function() {
-    window.location.href = "https://tupagina.com"; // cambia por tu URL
+    window.location.href = "index.html"; // cambia por tu URL
     });
 
     // Cerrar modal si haces click fuera del contenido
