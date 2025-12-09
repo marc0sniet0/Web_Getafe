@@ -1,53 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ayuntamiento de Getafe</title>
-    <link rel="icon" href="media/icono getafe.svg" type="image/svg">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-  <nav>
-        <a href="index.html">
-          <h1 class="logo">GETAFE</h1>
-        </a>
-        <ul class="menu">
-            <li class="menulink"><a href="#">Localización</a></li>
-            <li class="menulink"><a href="#">Climatología</a></li>
-            <li class="menulink"><a href="visit_impres.html">Visitas Imprescindibles</a></li>
-        </ul>
-        <div class="burger">
-            <i class="fas fa-bars"></i>
-        </div>
-  </nav> -->
-  <!-- Fondo de imágenes -->
-  <!-- <div class="background">
-    <img src="media/GETAFE_MURAL2.0.png" alt="">
-    <img src="media/Cerro-angeles2.0.png" alt="">
-    <img src="media/GETAFE_MURAL2.0.png" alt="">
-    <img src="media/Cerro-angeles2.0.png" alt="">
-    <img src="media/GETAFE_MURAL2.0.png" alt="">
-  </div> -->
-
-  <!-- Ventana fija central -->
-  <!-- <div class="overlay">
-    <div class="frame">
-      <div class="text-container">
-        <div class="text-block">Proyecto 1 — Branding</div>
-        <div class="text-block">Proyecto 2 — Packaging</div>
-        <div class="text-block">Proyecto 3 — Editorial</div>
-        <div class="text-block">Proyecto 4 — Web Architecture</div>
-        <div class="text-block">Proyecto 5 — Cultural Festival</div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/script.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -56,6 +6,8 @@
   <title>Scroll + Drag & Drop múltiple</title>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/visit_impres.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -100,6 +52,21 @@
     <section class="spacer"></section>
     <section class="spacer"></section>
   </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close"><i class="fa-solid fa-xmark"></i></span> <!-- X con Font Awesome -->
+      <h2>Felicidades</h2>
+      <p>
+        Acabas de encontrar los 5 lugares imprescindibles de Getafe,<br>
+        esperemos que en la vida real los encuentres también...
+      </p>
+      <button id="closeModal">Cerrar</button>
+    </div>
+  </div>
+
+
+
 
   <!-- jQuery y jQuery UI -->
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>

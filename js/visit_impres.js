@@ -13,7 +13,7 @@
   const render = () => {
     const vh = window.innerHeight;
     const s = window.scrollY / vh;
-    const i = Math.floor(s);
+    const i = Math.round(s);   // usamos round para que aparezcan antes
     const t = clamp01(s - i);
 
     const curr = Math.max(0, Math.min(i, N - 1));
@@ -33,11 +33,13 @@
     imgs[curr].style.opacity = fadeOut;
     imgs[next].style.opacity = fadeIn;
 
-    const parallaxAmt = 20;
-    const zoomAmt = 0.015;
+    // Parallax vertical + zoom sutil
+    const parallaxAmt = 20; // px
+    const zoomAmt = 0.015;  // 1.5%
     imgs[curr].style.transform = `translateY(${(-t) * parallaxAmt}px) scale(${1 + (1 - t) * zoomAmt})`;
     imgs[next].style.transform = `translateY(${(1 - t) * parallaxAmt}px) scale(${1 + t * zoomAmt})`;
 
+    // Texto activo dentro del marco
     if (fadeOut >= 0.5) texts[curr].classList.add("active");
     if (fadeIn >= 0.5)  texts[next].classList.add("active");
 
@@ -107,17 +109,46 @@ $(function() {
       $drag.draggable("disable");
       $drag.css({ cursor: "default", pointerEvents: "none" });
 
-      // Feedback visual
-      // Feedback visual: solo actualizamos el texto, sin cambiar color
+      // Feedback visual: solo texto, sin cambiar color
       $droppable.find(".drop-msg").html("Dropped!");
-
 
       // Actualizar contador
       const count = dropped.filter(Boolean).length;
       $droppable.find(".drop-counter").html(`${count}/5`);
 
+      // Si ya están las 5 imágenes, mostrar modal
+      if (count === 5) {
+        $("#modal").fadeIn();
+      }
+
       // Re-render para mantener visibles los demás
       state.render();
     }
   });
+
+  // Cerrar modal
+  $("#closeModal").on("click", function() {
+        $("#modal").fadeOut();
+    });
+
+    // Cerrar modal con la X
+    $(".close").on("click", function() {
+    $("#modal").fadeOut();
+    });
+
+    // Botón "Cerrar" redirige a otra página
+    $("#closeModal").on("click", function() {
+    window.location.href = "https://tupagina.com"; // cambia por tu URL
+    });
+
+    // Cerrar modal si haces click fuera del contenido
+    $(window).on("click", function(event) {
+    if ($(event.target).is("#modal")) {
+        $("#modal").fadeOut();
+    }
+    });
+
 });
+
+
+
