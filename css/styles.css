@@ -209,7 +209,7 @@ header{
 
 .carousel {
   /* width: 100vw; */
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
   position: relative;
 }
@@ -222,7 +222,7 @@ header{
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 600px;
+  width: 30rem;
   margin-right: 20px;
 }
 
@@ -363,6 +363,16 @@ header{
     .card {
       width: 95vw;
      
+    }
+
+    .carousel {
+      height: 65vh;
+
+    }
+
+    .carousel-item {
+      width: 20rem;
+      
     }
 
     /* footer */
