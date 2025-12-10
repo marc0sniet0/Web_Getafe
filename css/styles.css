@@ -196,7 +196,7 @@ header{
   color: white;
   opacity: 1;           
   transition: none;
-  z-index: 999;        
+  z-index: 990;        
 }
 
 .eventos h1{
@@ -205,14 +205,10 @@ header{
 }
 
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 .carousel {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -247,11 +243,79 @@ header{
   }
 }
 
+/* FOOTER */
+
+
+.footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--color-carmesí);
+  z-index: 100;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem;
+    align-items: center;
+}
+
+.footer-arriba {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.footer-col1 img {
+    width: 10rem;
+}
+
+.social-icons > a {
+    text-decoration: none;
+}
+
+.social-icons {
+    font-size: 1.5rem;
+    justify-content: center;
+    gap: 6rem;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-rw1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-links > a,
+.footer-rw1 > p {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
 
 
 
 
 /* * MEDIA QUERIES */ 
+
+
 @media screen and (max-width: 765px) {
 
     p{
@@ -300,5 +364,57 @@ header{
       width: 95vw;
      
     }
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-arriba {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .social-icons {
+        font-size: 2rem;
+        gap: 2rem;
+    }
+
+    .footer-rw1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-links > a {
+        font-size: 1.2rem;
+    }
+
 
 }

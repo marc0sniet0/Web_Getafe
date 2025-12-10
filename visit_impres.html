@@ -1,93 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ayuntamiento de Getafe</title>
-  <link rel="icon" href="media/icono getafe.svg">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="css/visit_impres.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ayuntamiento de Getafe</title>
+    <link rel="icon" href="media/icono getafe.svg">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/visit_impres.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-</head>
-<body>
-   <nav>
-        <a href="index.html">
-          <h1 class="logo">GETAFE</h1>
-        </a>
-        <ul class="menu">
-            <li class="menulink"><a href="#">Localización</a></li>
-            <li class="menulink"><a href="#">Climatología</a></li>
-            <li class="menulink"><a href="visit_impres.html">Visitas Imprescindibles</a></li>
-        </ul>
-        <div class="burger">
-            <i class="fas fa-bars"></i>
+  </head>
+  <body>
+    <nav>
+          <a href="index.html">
+            <h1 class="logo">GETAFE</h1>
+          </a>
+          <ul class="menu">
+              <li class="menulink"><a href="#">Localización</a></li>
+              <li class="menulink"><a href="#">Climatología</a></li>
+              <li class="menulink"><a href="visit_impres.html">Visitas Imprescindibles</a></li>
+          </ul>
+          <div class="burger">
+              <i class="fas fa-bars"></i>
+          </div>
+      </nav>
+    <!-- Escenario fijo con imágenes -->
+    <div class="stage">
+      <img src="media/Cerro-angeles2.0.png" alt="Imagen 1">
+      <img src="media/GETAFE_MURAL2.0.png" alt="Imagen 2">
+      <img src="media/Cerro-angeles2.0.png" alt="Imagen 3">
+      <img src="media/GETAFE_MURAL2.0.png" alt="Imagen 4">
+      <img src="media/Cerro-angeles2.0.png" alt="Imagen 5">
+    </div>
+
+    <!-- Ventana fija central con droppable -->
+    <div class="overlay">
+      <div class="frame" id="droppable">
+        <div class="text-container">
+          <div class="text-block">Teatro Federico García Lorca</div>
+          <div class="text-block">Base Aerea</div>
+          <div class="text-block">Catedral de la Magdalena</div>
+          <div class="text-block">Cerro de Los Ángeles</div>
+          <div class="text-block">Estadio Coliseum</div>
         </div>
-    </nav>
-  <!-- Escenario fijo con imágenes -->
-  <div class="stage">
-    <img src="media/Cerro-angeles2.0.png" alt="Imagen 1">
-    <img src="media/GETAFE_MURAL2.0.png" alt="Imagen 2">
-    <img src="media/Cerro-angeles2.0.png" alt="Imagen 3">
-    <img src="media/GETAFE_MURAL2.0.png" alt="Imagen 4">
-    <img src="media/Cerro-angeles2.0.png" alt="Imagen 5">
-  </div>
-
-  <!-- Ventana fija central con droppable -->
-  <div class="overlay">
-    <div class="frame" id="droppable">
-      <div class="text-container">
-        <div class="text-block">Teatro Federico García Lorca</div>
-        <div class="text-block">Base Aerea</div>
-        <div class="text-block">Catedral de la Magdalena</div>
-        <div class="text-block">Cerro de Los Ángeles</div>
-        <div class="text-block">Estadio Coliseum</div>
+        <p class="drop-msg">Recoge las pegatinas azules en la caja</p>
+        <p class="drop-counter">0/5</p>
       </div>
-      <p class="drop-msg">Recoge las pegatinas azules en la caja</p>
-      <p class="drop-counter">0/5</p>
     </div>
-  </div>
 
-  <!-- Contenedor de draggables -->
-  <div class="draggables">
-    <div id="draggable-1" class="draggable-img"><img src="media/teatro.png" alt="Dog"></div>
-    <div id="draggable-2" class="draggable-img"><img src="media/avion rotonda.png" alt="Cat"></div>
-    <div id="draggable-3" class="draggable-img"><img src="media/catedral peg.png" alt="Bird"></div>
-    <div id="draggable-4" class="draggable-img"><img src="media/cerro2.png" alt="Fish"></div>
-    <div id="draggable-5" class="draggable-img"><img src="media/escudo gtf cf.png" alt="Horse"></div>
-  </div>
-
-  <!-- Track de scroll -->
-  <div class="scroll-track">
-    <section class="spacer"></section>
-    <section class="spacer"></section>
-    <section class="spacer"></section>
-    <section class="spacer"></section>
-    <section class="spacer"></section>
-  </div>
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close"><i class="fa-solid fa-xmark"></i></span> <!-- X con Font Awesome -->
-      <h2>Felicidades</h2>
-      <p>
-        Acabas de encontrar los 5 lugares imprescindibles de Getafe,<br>
-        esperemos que en la vida real los encuentres también...
-      </p>
-      <button id="closeModal">Ir a la Home</button>
+    <!-- Contenedor de draggables -->
+    <div class="draggables">
+      <div id="draggable-1" class="draggable-img"><img src="media/teatro.png" alt="Dog"></div>
+      <div id="draggable-2" class="draggable-img"><img src="media/avion rotonda.png" alt="Cat"></div>
+      <div id="draggable-3" class="draggable-img"><img src="media/catedral peg.png" alt="Bird"></div>
+      <div id="draggable-4" class="draggable-img"><img src="media/cerro2.png" alt="Fish"></div>
+      <div id="draggable-5" class="draggable-img"><img src="media/escudo gtf cf.png" alt="Horse"></div>
     </div>
-  </div>
+
+    <!-- Track de scroll -->
+    <div class="scroll-track">
+      <section class="spacer"></section>
+      <section class="spacer"></section>
+      <section class="spacer"></section>
+      <section class="spacer"></section>
+      <section class="spacer"></section>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close"><i class="fa-solid fa-xmark"></i></span> <!-- X con Font Awesome -->
+        <h2>Felicidades</h2>
+        <p>
+          Acabas de encontrar los 5 lugares imprescindibles de Getafe,<br>
+          esperemos que en la vida real los encuentres también...
+        </p>
+        <button id="closeModal">Ir a la Home</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+              <div class="footer-info">
+                  <div class="footer-arriba">
+                      <div class="footer-col1">
+                          <img src="media/Logo-Getafe-Blanco.webp" alt="ayunt_GETAFE">
+                      </div>
+
+                      <div class="social-icons">
+                          <a href="https://www.instagram.com/aytogetafe/?hl=es">
+                              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                          </a>
+
+                          <a href="https://x.com/aytogetafe">
+                              <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+                          </a>
+
+                          <a href="https://www.tiktok.com/@aytogetafe">
+                              <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
+                          </a>
+                      </div>
+                  
+                  </div>
+
+                  <div class="footer-rw1">
+                      <div class="footer-links">
+                          <a href="#">Política de Privacidad</a>
+                          <a href="#">Aviso Legal</a>
+                          <a href="#">Configuración de Cookies</a>
+                          <a href="#">©Ayuntamiento de Getafe</a>
+                      </div> 
+                  </div>
+              </div>
+    </footer>
 
 
 
 
-  <!-- jQuery y jQuery UI -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-  <!-- Tu JS -->
-  <script src="js/visit_impres.js"></script>
-</body>
+    <!-- jQuery y jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <!-- Tu JS -->
+    <script src="js/visit_impres.js"></script>
+  </body>
 </html>
 
 
