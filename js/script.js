@@ -64,3 +64,11 @@ window.addEventListener('scroll', () => {
 
 
 
+
+/////EVENTOS/////
+
+// Duplica las imágenes para que el carrusel sea infinito
+const track = document.querySelector('.carousel-track');
+track.innerHTML += track.innerHTML;
+
+

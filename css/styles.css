@@ -58,7 +58,7 @@ nav {
     background: var(--color-carmesí);
     color: var(--color-beige);
     border-bottom: 1px solid var(--color-beige);
-    z-index: 99;
+    z-index: 999;
 
 }
 
@@ -110,7 +110,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90rem;
+  width: 75rem;
 }
 
 .img-header img{
@@ -150,7 +150,7 @@ header{
 
 .cards {
   position: relative;
-  z-index: 999;
+  z-index: 99;
   height: 500vh;
   transition: transform 1s ease;
 }
@@ -185,12 +185,15 @@ header{
   height: auto;
 }
 
+
+
+
+/* EVENTOS */
+
 .eventos {
-  height: 500px;
   position: relative;
   background: var(--color-beige);
   color: white;
-  padding: 100px 40px;
   opacity: 1;           
   transition: none;
   z-index: 999;        
@@ -198,10 +201,51 @@ header{
 
 .eventos h1{
   color: #981932;
+  padding: 2rem;
 }
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 600px;
+  margin-right: 20px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Animación infinita */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 
 
