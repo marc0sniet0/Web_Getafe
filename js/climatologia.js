@@ -14,8 +14,8 @@ function cargaGraficoLinea() {
         labels: meses,
         datasets: [{
             label: "Porcentaje de lluvia mensual en Getafe (%)",
-            backgroundColor: "#1E88E5",
-            borderColor: "#1E88E5",
+            backgroundColor: "#0040DC",
+            borderColor: "#0040DC",
             fill: true,
             tension: 0.3,
             data: lluvia
