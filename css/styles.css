@@ -53,6 +53,7 @@ nav {
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
+    top: 0;
     align-items: center;
     justify-content: space-between;
     background: var(--color-carmesí);

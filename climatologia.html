@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Ayuntamiento de Getafe</title>
+    <link rel="icon" href="media/icono getafe.svg">
 
-    <link rel="icon" href="media/icono getafe.svg" type="image/svg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/climatologia.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
-
     <nav>
         <a href="index.html">
-            <h1 class="logo">GETAFE</h1>
+          <h1 class="logo">GETAFE</h1>
         </a>
         <ul class="menu">
             <li class="menulink"><a href="#">Localización</a></li>
@@ -29,65 +27,58 @@
         </div>
     </nav>
 
-    <header>
-        <h1>Uso de ChartJS</h1>
-    </header>
-
+ 
+    
+    
     <main>
-        <section>
-            <h2>Gráfico de barras</h2>
-            <canvas id="barras"></canvas>
-        </section>
-
-        <section>
-            <h2>Gráfico de tarta</h2>
-            <canvas id="tarta"></canvas>
-        </section>
-
+        <h1>CLIMATOLOGÍA</h1>
         <section>
             <h2>Gráfico de línea</h2>
             <canvas id="linea"></canvas>
         </section>
+        
+        <footer class="footer">
+            <div class="footer-info">
+                <div class="footer-arriba">
+                    <div class="footer-col1">
+                        <img src="media/Logo-Getafe-Blanco.webp" alt="ayunt_GETAFE">
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/aytogetafe/?hl=es">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </a>
+                        
+                        <a href="https://x.com/aytogetafe">
+                            <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+                        </a>
+                        
+                        <a href="https://www.tiktok.com/@aytogetafe">
+                            <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-rw1">
+                    <div class="footer-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Aviso Legal</a>
+                        <a href="#">Configuración de Cookies</a>
+                        <a href="#">©Ayuntamiento de Getafe</a>
+                    </div> 
+                </div>
+            </div>
+        </footer>
     </main>
 
-    <footer class="footer">
-        <div class="footer-info">
-            <div class="footer-arriba">
-                <div class="footer-col1">
-                    <img src="media/Logo-Getafe-Blanco.webp" alt="ayunt_GETAFE">
-                </div>
-
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/aytogetafe/?hl=es">
-                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="https://x.com/aytogetafe">
-                        <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@aytogetafe">
-                        <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-rw1">
-                <div class="footer-links">
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Aviso Legal</a>
-                    <a href="#">Configuración de Cookies</a>
-                    <a href="#">©Ayuntamiento de Getafe</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ✅ jQuery -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- ✅ Chart.js -->
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- ✅ Tu script -->
+    <!-- Tu script -->
     <script src="js/climatologia.js"></script>
 
 </body>
