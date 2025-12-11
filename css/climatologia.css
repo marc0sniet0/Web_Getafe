@@ -15,7 +15,8 @@ main h1{
 
 
 section {
-    width: 70%;
+    display: flex;
+    width: 90%;
     margin: 4rem auto;
     justify-content: space-between;
 }
@@ -27,9 +28,18 @@ section > h2 {
     text-align: center;
 }
 
-section > div {
+.gráfica {
+    width: 70%;
+    /* max-width: 500px; */
+}
+
+.img-clima{
+    width: 20rem;
+}
+
+.img-clima img{
     width: 100%;
-    max-width: 500px;
+    height: auto;
 }
 
 footer {
