@@ -1,0 +1,61 @@
+main h1{
+    margin-top: 7rem;
+    margin-left: 2rem;
+    color: var(--color-beige);
+}
+
+#como_llegar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    min-height: 40rem;
+}
+
+.metro-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.metro{
+    width: 40vw;
+}
+
+.metro img{
+    width: 100%;
+    height: auto;
+}
+
+.renfe-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.renfe{
+    width: 40vw;
+}
+
+.renfe img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 765px) {
+    #como_llegar{
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .metro{
+        width: 24rem;
+    }
+
+    .renfe{
+        width: 24rem;
+    }
+
+
+
+}
