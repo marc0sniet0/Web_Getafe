@@ -18,7 +18,7 @@ section {
     display: flex;
     width: 90%;
     min-height: 30rem;
-    margin: 4rem auto;
+    margin: 1rem auto;
     justify-content: space-between;
 }
 
@@ -39,7 +39,9 @@ section > h2 {
 }
 
 .img-clima{
-    width: 20rem;
+    display: flex;
+    align-items: center;
+    width: 25vw;
 }
 
 .img-clima img{
@@ -75,6 +77,10 @@ section > h2 {
 
     .img-clima{
         width: 10rem;
+    }
+
+    .gráfica {
+        width: 90%;
     }
     
 

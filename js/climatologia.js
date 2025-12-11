@@ -26,14 +26,31 @@ function cargaGraficoLinea() {
         type: "line",
         data: datos,
         options: {
+            plugins: {
+                legend: {
+                    labels: {
+                        color: "black"
+                    }
+                }
+            },
             scales: {
                 x: {
+                    ticks: {
+                        color: "#FFF0D9"
+                    },
                     border: { color: "black", width: 2 }
                 },
                 y: {
                     min: 0,
                     max: 20,
-                    title: { display: true, text: "Porcentaje (%)" },
+                    ticks: {
+                        color: "#FFF0D9"
+                    },
+                    title: {
+                        display: true,
+                        text: "Porcentaje (%)",
+                        color: "black"
+                    },
                     border: { color: "black", width: 2 }
                 }
             }
