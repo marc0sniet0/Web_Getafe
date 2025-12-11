@@ -307,6 +307,7 @@ header{
 .footer-rw1 > p {
     color: white;
     font-weight: 300;
+    text-align: center;
     text-decoration: none;
 }
 
