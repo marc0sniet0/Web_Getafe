@@ -37,7 +37,7 @@ h2{
 }
 
 
-/* Escenario fijo */
+
 .stage {
   position: fixed;
   inset: 0;
@@ -62,7 +62,7 @@ h2{
 }
 
 
-/* Overlay con frame droppable */
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -129,7 +129,7 @@ h2{
   color: var(--color-negro);
 }
 
-/* Draggables */
+
 .draggables {
   position: fixed;
   bottom: 20px;
@@ -137,7 +137,7 @@ h2{
   z-index: 3;
 }
 .draggable-img {
-  display: none; /* se muestran progresivamente */
+  display: none; 
   cursor: grab;
 }
 .draggable-img img {
@@ -145,14 +145,12 @@ h2{
   height: 7rem;
 }
 
-/* Scroll track */
 .scroll-track { position: relative; z-index: 1; }
 .spacer { height: 100vh; }
 
-/* Modal */
-/* Modal */
+
 .modal {
-  display: none; /* oculto por defecto */
+  display: none; 
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.7);

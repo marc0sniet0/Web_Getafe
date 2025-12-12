@@ -1,13 +1,12 @@
 function cargaGraficoLinea() {
 
-    // Meses del año
+
     var meses = [
         "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
         "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
     ];
 
-    // Porcentaje aproximado de lluvia mensual en Getafe
-    // (Distribución típica: más lluvia en otoño/primavera, menos en verano)
+
     var lluvia = [12, 10, 9, 11, 8, 4, 2, 3, 7, 14, 12, 8];
 
     var datos = {

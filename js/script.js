@@ -1,8 +1,8 @@
-// Selección de elementos del HTML
+
 let burger = document.querySelector(".burger > i");
 let menu_opt = document.querySelector(".menu");
 
-// Definimos evento click sobre el boton del menú
+
 burger.addEventListener("click", function() {
 
     burger.classList.toggle("fa-bars");
@@ -67,7 +67,6 @@ window.addEventListener('scroll', () => {
 
 /////EVENTOS/////
 
-// Duplica las imágenes para que el carrusel sea infinito
 const track = document.querySelector('.carousel-track');
 track.innerHTML += track.innerHTML;
 

@@ -1,15 +1,42 @@
+
+
 main h1{
-    margin-top: 7rem;
-    margin-left: 2rem;
+    /* margin-top: 7rem;
+    margin-left: 2rem; */
     color: var(--color-beige);
+}
+
+#loc{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 6rem;
+    padding: 0 2rem;
+    min-height: 40rem;
+}
+
+.cont-map{
+    width: 30vw;
+}
+
+.cont-map img{
+    width: 100%;
+    height: auto;
+}
+
+#loc-gtf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #como_llegar{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    min-height: 40rem;
+    /* padding: 2rem;
+    min-height: 40rem; */
 }
 
 .metro-cont{
@@ -46,6 +73,7 @@ main h1{
     #como_llegar{
       flex-direction: column;
       justify-content: space-around;
+      gap: 1.5rem;
     }
 
     .metro{
@@ -54,6 +82,12 @@ main h1{
 
     .renfe{
         width: 24rem;
+    }
+
+    #loc{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 
 
